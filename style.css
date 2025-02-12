@@ -1,0 +1,874 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#under{
+    height:360px;
+}
+
+
+
+
+.small-container {
+    display: block;
+    padding: 0px 8%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.col-small {
+    display: flex;
+    align-items: center;
+}
+
+.contacts img {
+    height: 30px;
+    width: 30px;
+}
+
+.contact-text {
+    padding: 0 15px;
+
+}
+
+.contact-text h5 {
+    font-weight: 600;
+}
+
+.contact-text p {
+    font-weight: 300;
+    font-size: 12px;
+    color: #444;
+}
+
+.countrys {
+    display: flex;
+    align-items: center;
+
+}
+
+.countrys img {
+    width: 40px;
+    height: 40px;
+}
+
+.countrys select {
+    width: 100%;
+    max-width: 18px;
+    padding: 0px 5px;
+    border: none;
+}
+
+.dr-logo img {
+    height: 100%;
+    width: 50px;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.navbar {
+    background: #4992ff;
+}
+
+.navbar ul {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px;
+}
+
+.navbar li {
+    padding-right: 10px;
+
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 5px;
+}
+
+a.left {
+    position: relative;
+}
+
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FE0435;
+    visibility: hidden;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.search-bar {
+    background-color: #0066ff;
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search-bar input::placeholder {
+    color: #fff;
+}
+
+.search-bar input {
+    background-color: #0066ff;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 10px;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* ========= Carousel ========== */
+
+.carousel {
+    background: url('./Resources/mainbg.webp') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+}
+
+.carousal-text {
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px 0px;
+}
+
+.span-red {
+    color: rgb(243, 0, 0);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.carousal-text h1 {
+    font-size: 38px;
+    text-shadow: 0px 0px 20px #000;
+    line-height: 44px;
+}
+
+.carousal-text h4 {
+    font-weight: 500;
+    text-shadow: 0px 0px 20px #000;
+}
+
+.carousal-text p {
+    font-size: 16px;
+    font-weight: 400;
+    text-shadow: 0px 0px 20px #000;
+}
+
+/* ========= Navbar 2 ========== */
+
+.navbar-2 ul {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0px;
+}
+
+.navbar-2 li a {
+    color: #555;
+    font-weight: 600;
+    padding: 10px 10px 10px 0px;
+}
+
+.navbar-2 {
+    border-bottom: .5px solid #999;
+}
+
+li a.active-btn {
+    position: relative;
+}
+
+li a.active-btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -10px;
+    left: -5px;
+    background-color: #4992ff;
+    visibility: hidden;
+}
+
+.active,
+.active-btn:active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+
+/* ======== treatment Overview ======== */
+
+.row-2 {
+    padding: 40px 0px;
+    border-bottom: 2px dashed #0066ff;
+}
+
+.Overview .col-2 {
+    flex: 1;
+
+}
+
+.Overview .col-2 img {
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.col-2 h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.col-2 p {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: #444;
+}
+
+.span-red {
+    font-weight: 600;
+}
+
+/* ======= Contents ======= */
+.content .row-2 .col-2:first-child {
+    flex: 2;
+    padding-right: 50px;
+}
+
+.content .row {
+    align-items: flex-start;
+}
+
+.content .row-2 {
+    border-bottom: none;
+}
+
+.content .col-3 {
+    border-bottom: 2px dashed #0066ff;
+    padding: 40px 0px;
+
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul li::before {
+    content: "\f10c";
+    font-family: FontAwesome;
+    color: #4992ff;
+    font-weight: bolder;
+    font-size: 8px;
+    padding-right: 10px;
+    display: inline-block;
+    width: 1em;
+    /* margin-left: -1em; */
+}
+
+.content li {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 0;
+    color: #444;
+
+}
+
+.input-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 25px -20px #555;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+
+}
+
+.input-card input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0px;
+    outline: none;
+    border: 1px solid #ddd;
+    color: #999;
+
+}
+
+.input-card h3 {
+    color: #4992ff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.input-card p {
+    color: #555;
+    font-weight: 500;
+}
+
+.input-card .btn {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.input-card input::placeholder {
+    color: #999;
+}
+
+.span-blue {
+    color: #0066ff;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+#Treatment-FAQs hr {
+    border: 0.5px solid #ddd;
+    margin: 5px 0px;
+}
+
+#Patient-Stories {
+    border-bottom: none;
+}
+
+.story-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card-bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+
+.card-top h5 {
+    font-weight: 600;
+}
+
+.card-top i {
+    font-size: 38px;
+    color: #ff6262;
+}
+
+.card img {
+    width: 200px;
+    height: 100%;
+
+}
+
+.card-bottom img {
+    width: 50px;
+    height: 100%;
+}
+
+.card small {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* ======== Doctors team ========= */
+.doctor-team {
+    background-color: #cdd9e4;
+    padding: 60px 0px;
+}
+
+.doctor-team .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h3 {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.title h2 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.title .span-blue {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.dr-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dr-card {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 28px -20px #555;
+
+}
+
+.dr-card img {
+    max-height: 300px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.dr-card h4 {
+    color: rgb(255, 34, 34);
+}
+
+.dr-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.dr-card small {
+    color: #777;
+    font-weight: 500;
+}
+
+/* ======= Hospitals ======== */
+.Hospitals {
+    background-color: #FFF;
+}
+
+.Hospitals .dr-card {
+    padding: 0px 0px;
+    border: 1px dashed rgb(255, 34, 34);
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.Hospitals .dr-card img {
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
+
+}
+
+.Hospitals .dr-card p {
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+.Hospitals .dr-card h4 {
+    padding-bottom: 15px;
+}
+
+.title p {
+    margin-top: 30px;
+}
+
+.title p .span-red {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+
+/* ========= Footer ======== */
+.footer {
+    margin-top: 50px;
+}
+
+.footer p {
+    color: #FFF;
+}
+
+.footer-header {
+    background-color: #4992ff;
+    color: #fff;
+    padding: 30px 0px;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer-header p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-header h1 {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.footer-header h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-header .btn {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #0066ff;
+}
+
+.footer-links {
+    background-color: #0b2432;
+    color: #FFF;
+    padding: 30px 0px;
+}
+
+.footer-links .row {
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.footer-links li {
+    list-style: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer-links .col-2 {
+    padding: 0px 10px;
+
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer-links hr {
+    border: .5px solid #666;
+}
+
+.footer-content .col-2 h5 {
+    color: #4992ff;
+    font-size: 20px;
+}
+
+.footer-content {
+    background-color: #0b2432;
+    color: #FFF;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-logo img {
+    width: 300px;
+}
+
+.social-icons img {
+    width: 26px;
+    height: 100%;
+    margin: 5px;
+}
+
+.footer-text {
+    width: 100%;
+    max-width: 500px;
+    margin: 0px 20px;
+}
+
+.footer-end {
+    background-color: #4992ff;
+    color: #FFF;
+    padding: 10px 0px;
+}
+
+.footer-end p {
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*ANCHOR Enteties */
+.btn {
+    color: white;
+    background-color: #4992ff;
+    padding: 8px 30px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #0066ff;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* ANCHOR ============= Resposiveness =============== */
+
+
+@media screen and (max-width: 1150px) {
+    .small-container {
+        padding: 0px 3%;
+    }
+
+    .header .contacts img {
+        width: 25px;
+    }
+
+    .contact-text {
+        padding: 3px;
+    }
+
+    .contact-text p {
+        font-size: 8px;
+    }
+
+    .contact-text h5 {
+        font-size: 8px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+        text-overflow: clip;
+        padding: 0;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .navbar,
+    .navbar-2 {
+        overflow-y: scroll;
+    }
+
+    .search-bar {
+        padding: 5px 10px;
+    }
+
+    .search-bar i,
+    ::placeholder {
+        font-size: 12px;
+    }
+
+    .navbar-2 ul li a {
+        font-size: 12px;
+        padding: 5px 10px 5px 0px;
+        white-space: nowrap;
+    }
+
+    .content .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-text {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .Overview .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Overview .col-2 img {
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+
+    .footer-links .row {
+        flex-direction: column;
+    }
+
+    .footer-links .col-2 {
+        padding: 10px;
+    }
+
+    .footer-content .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content .row-2 .col-2:first-child {
+        padding-right: 0px;
+    }
+
+    .footer-content .col-2 {
+        padding: 20px 0px;
+    }
+
+    .footer-end .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-card {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dr-logo img {
+        width: 30px;
+    }
+
+    .header .logo #logo-img {
+        width: 80px;
+        padding-right: 10px;
+    }
+
+    .logo {
+        justify-content: flex-start;
+    }
+
+    .col-small {
+        padding-right: 10px;
+    }
+
+    .doctor-team .dr-cards {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .header .contacts img {
+        width: 20px;
+    }
+
+    .carousal-text {
+        padding: 30px 0px;
+    }
+
+    .carousal-text h1 {
+        font-size: 30px;
+    }
+
+    .carousal-text h4 {
+        font-size: 14px;
+    }
+
+    .carousal-text p {
+        font-size: 14px;
+    }
+
+    .main-logo img {
+        width: 200px;
+    }
+
+    .countrys img {
+        width: 30px;
+    }
+
+    .footer-text {
+        margin: 0;
+    }
+
+    .story-card .card {
+        margin: 0;
+    }
+}
